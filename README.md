@@ -89,3 +89,13 @@ In a JSON serializable format.
 
 To submit entries make a pull request to:
 https://github.com/zencephalon/sailthru-data-challenge
+
+<h3> Legal </h3>
+
+Thank you for taking part in the Sailthru Challenge.  
+
+As part of the Sailthru Challenge, you will be able to download data from the link we provide.  This data is Sailthru's Confidential Information.  
+
+By downloading this data, you agree that you will treat this information as confidential, and proprietary to Sailthru, and that you will not use the Confidential Information other than for this event.   In addition, you shall not copy, disclose, publish, share or otherwise reveal any of the Sailthru's Confidential Information with any other party whatsoever, except as authorized by law, or with the specific prior written authorization of Sailthru. You agree not to use such Confidential Information for your own benefit or for the benefit of any other person or business entity.
+
+You acknowledge and agree that any disclosure of the Confidential Information except as provided here may cause serious and irreparable damage to Sailthru for which there may be no adequate remedy at law. Without limiting Sailthru's rights and remedies which are otherwise available, Sailthru will be entitled to equitable relief including, without limitation, an injunction, restraining order or specific performance if you breach this agreement in any way.

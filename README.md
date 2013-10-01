@@ -29,15 +29,16 @@ In a JSON serializable format.
 
 <h3>Schema</h3>
 
-‘_id’: can provide, change to a sequential value from 1 to n
+```
+‘_id’: Sequential numeric ids
 
-‘browser’: the browsers a user opens email with
+‘browser’: The browsers a user opens email with
 
-‘browser_site’: the browsers a user opens links with
+‘browser_site’: The browsers a user opens links with
 
-‘click_count’: total link clicks the user has made
+‘click_count’: Total link clicks the user has made
 
-‘click_time’: time of user’s last click
+‘click_time’: Time of user’s last click
 
 ‘daily_click’: YYMMDD, number of clicks on that day
 
@@ -47,43 +48,44 @@ In a JSON serializable format.
 
 ‘daily_pv’: YYMMDD, the number of pageviews a user generates that day
 
-‘email_hour’: number of opens within that GMT hour
+‘email_hour’: Number of opens within that GMT hour
 
-‘geo’ : ‘email location user opened email from’, number of opens from that location
+‘geo’ : Email location user opened email from’, number of opens from that location
 
-‘geo.count’ : ‘total number of email opens with geo-data’
+‘geo.count’ : Total number of email opens with geo-data’
 
-‘geo.country’ : ‘total number of email opens per country’, country
+‘geo.country’ : Total number of email opens per country
 
-‘geo.state: ‘total number of email opens per state’, state
+‘geo.state : Total number of email opens per state
 
-‘geo.zipcode’ : ‘total number of email opens per zipcode’, zipcode
+‘geo.zipcode’ : Total number of email opens per zipcode
 
 ‘horizon’: Number of pageviews on pages with that interest tags. 
 
-‘horizon_count’: total pageviews
+‘horizon_count’: Total pageviews
 
-‘horizon_month’: total pageviews per month per tag. YYYYMM format for months
+‘horizon_month’ : Total pageviews per month per tag. YYYYMM format for months
 
-‘horizon_time’: last pageview date time
+‘horizon_time’ : Last pageview date time
 
-"lifetime_click" : total clicks for the user
+‘lifetime_click’ : Total clicks for the user
 
-"lifetime_message" : total email sent to the user
+‘lifetime_message’ : Total email sent to the user
 
-"mobile_email_hour" : Mobile email opens per GMT hour bucket
+‘mobile_email_hour" : Mobile email opens per GMT hour bucket
 
-"mobile_site_hour" : Mobile website visits per GMT hour bucket
+‘mobile_site_hour" : Mobile website visits per GMT hour bucket
 
-"open_count"  total open count
+‘open_count’ : Total open count
 
-"open_time" : Last open time
+‘open_time’ : Last open time
 
-"signup_time" : When the user signs up for emails and on-site tracking
+‘signup_time’ : When the user signs up for emails and on-site tracking
 
-"site_hour" : Website visits per GMT hour bucket
+‘site_hour’ : Website visits per GMT hour bucket
 
-"urls_count"  total number of dynamic urls
+‘urls_count’ : Total number of dynamic urls
+```
 
 <h3> Submitting </h3>
 

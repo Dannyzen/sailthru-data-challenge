@@ -9,7 +9,7 @@ A tool, an algorithm, a visualization, anything that our data can power. Mine it
 
 <h3>Prize</h3>
 
-<h5><a href="http://ledpixelart.com/pixel/">The Pixel</a> and a guest post on our engineering blog.</h5>  
+<h5><a href="http://ledpixelart.com/pixel/">The Pixel</a> a guest post on the Sailthru engineering blog and $100 site credit (for up to 4 team members) from <a href="https://grandst.com/">Grand St.</h5>  
 
 <img src="assets/pixel.jpg">
 

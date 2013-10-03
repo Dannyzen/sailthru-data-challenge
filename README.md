@@ -7,11 +7,17 @@ We wanted to give you something different: A huge set of data for you to hack on
 
 A tool, an algorithm, a visualization, anything that our data can power. Mine it for whatever you’d like. 
 
-<h3>Prize</h3>
+<h3>Prizes</h3>
 
-<h5><a href="http://ledpixelart.com/pixel/">The Pixel</a> and a guest post on our engineering blog.</h5>  
+<ul>
+ <li><a href="http://ledpixelart.com/pixel/">The Pixel</a></li> 
+ <li>A guest post on the Sailthru engineering blog</li> 
+ <li>$100 site credit (for up to 4 team members) from <a href="https://grandst.com/">Grand St.</li>
+</ul>
 
 <img src="assets/pixel.jpg">
+
+Additionally, our friends at Grand St are offering an exclusive 15% off any Grand St. order for all HackMIT attendees. Use "GRANDSTLOVESMIT" at checkout for the discount.
 
 <h3>Judging</h3>
 

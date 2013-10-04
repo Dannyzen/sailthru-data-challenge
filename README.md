@@ -35,8 +35,10 @@ In a JSON serializable format.
 
 <h3>Extracting the Data and Importing into Mongo</h3>
 
-  tar -xzvf hackathon_data.tar.gz
-  mongoimport --collection hackathon --file hackathon_data.json
+```
+tar -xzvf hackathon_data.tar.gz
+mongoimport --collection hackathon --file hackathon_data.json
+```
 
 <h3>Schema</h3>
 

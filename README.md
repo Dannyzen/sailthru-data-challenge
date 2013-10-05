@@ -3,9 +3,7 @@ Sailthru Data Challenge
 
 <h3>Background</h3>
 There are lots of awesome APIs to play with at every hackathon. 
-We wanted to give you something different: A huge set of data for you to hack on. The hack can be anything. 
-
-A tool, an algorithm, a visualization, anything that our data can power. Mine it for whatever you’d like. 
+We wanted to give you something different: A huge set of data for you to hack on. The hack can be anything: a tool, an algorithm, a visualization, anything that our data can power. Mine it for whatever you’d like. 
 
 <h3>Prizes</h3>
 
@@ -21,7 +19,8 @@ Additionally, our friends at Grand St are offering an exclusive 15% off any Gran
 
 <h3>Judging</h3>
 
-Each of the below metrics will be judged on a scale of 1-3.
+We'll be taking a look at the following criterion:
+
 <ul>
  <li>Easy of use</li>
  <li>Creativity</li>
@@ -29,7 +28,7 @@ Each of the below metrics will be judged on a scale of 1-3.
 </ul>
 
 <h3>Data</h3>
-The data can be located here: 
+The data can be located here: http://tinyurl.com/sailthru-hackathon
 
 In a JSON serializable format.
 

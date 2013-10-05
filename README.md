@@ -30,7 +30,7 @@ We'll be taking a look at the following criterion:
 <h3>Data</h3>
 The data can be located here: http://tinyurl.com/sailthru-hackathon
 
-In a JSON serializable format.
+The data is gziped. When you extract it you will find a serialized JSON file.
 
 <h3>Extracting the Data and Importing into Mongo</h3>
 

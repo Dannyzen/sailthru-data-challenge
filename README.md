@@ -39,6 +39,11 @@ tar -xzvf hackathon_data.tar.gz
 mongoimport --collection hackathon --file hackathon_data.json
 ```
 
+You can import the data into <a href="http://www.mongodb.com">MongoDB</a> by running:<code> mongoimport --type json --file hackathon_data.json --collection hackathon </code>
+
+You can then use the 
+<a href="http://docs.mongodb.org/manual/reference/mongo-shell/">MongoDB Shell</a>, or your favorite <a href="http://docs.mongodb.org/ecosystem/drivers/">client library</a> to hack our data.
+
 <h3>Schema</h3>
 
 ```

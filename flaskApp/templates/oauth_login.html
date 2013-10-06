@@ -1,0 +1,87 @@
+<section>
+    <div class="well">
+        <h2>Try to predict which web-browser/platform is more popular, given the location of the user!</h2>
+        {% if data.consumer_id is not number %}
+            <p>To get started with our OAuth integration, you have to make a Venmo app first. Check out the <a href-"https://github.com/venmo/flaskeleton">README</a> for information on how to get our OAuth example up and running with Venmo!</p>
+        {% elif not data.signed_in %}
+            <p>Clicking this button will redirect you to the Venmo OAuth login page. Once the user logs in, they will be redirected back to your app, with their access_token in the redirect url. Your app can then grab that token using the flask request module.</p>
+            <button class="btn btn-primary" ><a style="color:#fff" href="https://api.venmo.com/oauth/authorize?client_id={{data.consumer_id}}&scope=make_payments,access_profile&response_type=code">Click here to authenticate with Venmo using OAuth</a></button>
+        {% else %}
+	    <h3>Location HINT: {{data.location}}</h3>
+            <!-- <center><h1>{{data.browsers}}.</h1> -->
+	    <h1>
+	    <center>
+	    <button id="leftButton" class="btn btn-default btn-xlarge" type="button">{{data.browser1}}</button> VS
+	    <button id="rightButton" class="btn btn-default btn-xlarge" type="button">{{data.browser2}}</button></center></h1>
+	    <script>
+	      var leftScore = "{{data.browser1Score}}";
+	      var rightScore = "{{data.browser2Score}}";
+	      $("#leftButton").click(function() {
+
+	      $.ajax({
+	      type: "POST",
+	      url: "https://agent.electricimp.com/GVdqUmVCn7W8?enter=left",
+	      data: "leftButton",
+	      success: function (){},
+	      dataType: "text"
+	      });
+
+
+	      if (leftScore < rightScore) {
+			      $("#leftButton").addClass("btn-danger");
+			      } else {
+			      $("#leftButton").addClass("btn-success");
+			      }
+
+
+
+	      });
+
+	      $("#rightButton").click(function() {
+
+	      $.ajax({
+	      type: "POST",
+	      url: "https://agent.electricimp.com/GVdqUmVCn7W8?enter=right",
+	      data: "rightButton",
+	      success: function (){},
+	      dataType: "text"
+	      });
+	      if (leftScore < rightScore) {
+			      $("#rightButton").addClass("btn-success");
+			      } else {
+			      $("#rightButton").addClass("btn-danger");
+			      }
+
+
+	      });
+
+
+
+	      
+	    </script>
+            <!-- <p>{{data.stuff}}.</p> -->
+            <!-- <button class="btn btn-warning" ><a style="color:#fff" href="logout">Logout!</a></button> -->
+        <!--     <h2>Make a payment on Venmo! <b>(Warning: this will use real money!!)</b></h2> -->
+        <!--         <div id="payment_note_input"> -->
+        <!--             <input id="payment_note" type="text" class="form-control" required placeholder="add a note to your payment"> -->
+        <!--         </div> -->
+        <!--         <div id="payment_target_input" > -->
+        <!--             <input id="payment_target" type="text" class="form-control" required placeholder="pay an email address"> -->
+        <!--         </div> -->
+        <!--         <div id="payment_amount_input"> -->
+        <!--             <input id="payment_amount" type="text" class="form-control" required placeholder="enter the payment amount! "> -->
+        <!--         </div> -->
+        <!--         </br> -->
+        <!--             <button class="btn btn-danger" type="button" onClick="javascript:make_payment('{{data.access_token}}');">POST to /payments</button> -->
+        <!--     <h3>Response:</h3> -->
+        <!--     <textarea id="make_payment_response" class="form-control" rows="3"></textarea> -->
+        <!-- </br> -->
+        <!--     <h2>Get a list of your payments!</h2> -->
+        <!--     <div class="input-group"> -->
+        <!--         <button class="btn btn-primary" type="button" onClick="javascript:get_payments('{{data.access_token}}');">Get your payments</button> -->
+        <!--     </div> -->
+        <!--     </br> -->
+        <!--     <textarea class="form-control" id="get_payments_response" rows="10"></textarea> -->
+        {% endif %}
+    </div>
+</section>

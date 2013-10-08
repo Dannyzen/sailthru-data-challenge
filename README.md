@@ -17,8 +17,6 @@ A tool, an algorithm, a visualization, anything that our data can power. Mine it
 
 <img src="assets/pixel.jpg">
 
-Additionally, our friends at Grand St are offering an exclusive 15% off any Grand St. order for all HackMIT attendees. Use "GRANDSTLOVESMIT" at checkout for the discount.
-
 <h3>Judging</h3>
 
 Each of the below metrics will be judged on a scale of 1-3.

@@ -28,7 +28,7 @@ We'll be taking a look at the following criterion:
 </ul>
 
 <h3>Data</h3>
-The data can be located here: http://tinyurl.com/sailthru-hackathon
+The data can be located here: http://tinyurl.com/sailthru-data
 
 The data is gziped. When you extract it you will find a serialized JSON file.
 

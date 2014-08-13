@@ -10,7 +10,6 @@ We wanted to give you something different: A huge set of data for you to hack on
 <ul>
  <li><a href="http://ledpixelart.com/pixel/">The Pixel</a></li> 
  <li>A guest post on the Sailthru engineering blog</li> 
- <li>$100 site credit (for up to 4 team members) from <a href="https://grandst.com/">Grand St.</li>
 </ul>
 
 <img src="assets/pixel.jpg">

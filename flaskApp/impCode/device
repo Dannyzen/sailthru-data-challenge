@@ -1,0 +1,49 @@
+// configure the imp (best practice)
+imp.configure("LED Api", [], []);
+ 
+// create a global variabled called led, 
+// and assign pin9 to it
+led1 <- hardware.pin9;
+led2 <- hardware.pin7;
+led3 <- hardware.pin5;
+ 
+// configure led to be a digital output
+led1.configure(DIGITAL_OUT);
+led2.configure(DIGITAL_OUT);
+led3.configure(DIGITAL_OUT);
+
+// function to turn LED on or off
+function setLed(ledState) {
+  server.log("Set LED: " + ledState);
+  if (ledState == 0) {
+      led1.write(0);
+      led2.write(0);
+      led3.write(0);
+  }
+  else if (ledState == 1) {
+      led1.write(1);
+      led2.write(0);
+      led3.write(0);
+  }
+  else if (ledState == 2) {
+      led1.write(0);
+      led2.write(1);
+      led3.write(0);
+  }
+  else if (ledState == 3) {
+      led1.write(1);
+      led2.write(1);
+      led3.write(0);
+  }
+  else if (ledState == 4) {
+      led1.write(0);
+      led2.write(0);
+      led3.write(1);
+  }
+  else {
+      server.log("Invalid led state");
+  }
+}
+ 
+// register a handler for "led" messages from the agent
+agent.on("led", setLed);

@@ -1,0 +1,49 @@
+// Log the URLs we need
+server.log("Turn LED On: " + http.agenturl() + "?led=1");
+server.log("Turn LED Off: " + http.agenturl() + "?led=0");
+leftCtr <- 0;
+rightCtr <- 0;
+function requestHandler(request, response) {
+  try {
+    // check if the user sent led as a query parameter
+    if ("led" in request.query) {
+      
+      // if they did, and led=1.. set our variable to 1
+      if (request.query.led == "1" || request.query.led == "0" 
+            || request.query.led == "2" || request.query.led == "3"
+            || request.query.led == "4") {
+        // convert the led query parameter to an integer
+        local ledState = request.query.led.tointeger();
+ 
+        // send "led" message to device, and send ledState as the data
+        device.send("led", ledState); 
+      }
+    } else if ("enter" in request.query) {
+      if (request.query.enter == "left") {
+        leftCtr <- leftCtr + 1;
+        server.log("Updated LEFT:" + leftCtr);
+      } else if (request.query.enter == "right") {
+        rightCtr <- rightCtr + 1;
+        server.log("Updated RIGHT:" + rightCtr);
+      } else if (request.query.enter == "hubba") {
+        
+        if (leftCtr <= rightCtr) {
+          server.log(leftCtr + "left less than right" + rightCtr);
+          device.send("led", 1);
+        } else {
+          server.log(rightCtr + "right less than left" + leftCtr);
+          device.send("led", 2);
+        }
+        leftCtr = 0;
+        rightCtr = 0;
+      }
+    }
+    // send a response back saying everything was OK.
+    response.send(200, "OK");
+  } catch (ex) {
+    response.send(500, "Internal Server Error: " + ex);
+  }
+}
+ 
+// register the HTTP handler
+http.onrequest(requestHandler);

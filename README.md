@@ -1,3 +1,8 @@
+
+<h3>My Submission</h3>
+I wrote a flask application that uses the data.  The app is in the flaskApp folder.  I also used an electric imp to wirelessly keep track of votes and display the results.  The code is in the impCode folder (which is in the flaskApp folder).
+
+
 Sailthru Data Challenge
 =======================
 
